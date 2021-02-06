@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rea more jquery</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background-color: #f5f7f9;
+font-family: Open Sans,sans-serif;
+}
+img{
+width: 100%;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+.box{
+width: 30%;
+float: left;
+margin: 50px 20px;
+background-color: #fff;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+height: 90px;
+overflow: hidden;
+} 
+.box h4{
+margin-bottom: 10px;
+}
+.box p{
+font-size: 15px;
+line-height: 28px;
+height: 90px;
+overflow: hidden;
+}
+.box a{
+	display: inline-block;
+	color: #fff;
+	background-color: #2196f3;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 8px;
+	margin-top: 15px;
+}
+.box a:hover{
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.box.showContent p{
+	height: auto;
+}
+.box.showContent a.readmore-btn{
+background-color: red;
+}
+</style> 
+</head>
+<body>
+<div class="box">
+<img src="time.jpg" alt="">
+<h4>Top 10 Designers To Shop Bridal Wear In Delhi</h4>
+<p>You must be admiring your favorite fashion blogger's wedding outfit and dreaming about having a similar one on your special day. No more dreaming, as today, we are 
+			here with the list of 10 famous fashion designers in Delhi for bridal wear.</p>
+<a href="javascript:void();" class="readmore-btn">Read More</a>
+</div>
+<div class="box">
+<img src="time1.jpg" alt="">
+<h4>What Makes Louis Vuitton So Expensive?</h4>
+<p>Louis Vuitton, the French fashion house, is always in the fashion industry news and perpetually in everyone's mind and dreams for the artistic luxury bags. It is one of the most constant luxury brands in the fashion industry news and valuable luxury brand for more than a decade now.</p>
+<a href="javascript:void();" class="readmore-btn">Read More</a>
+</div>
+<div class="box">
+<img src="time2.jpg" alt="">
+<h4>Why Choose Nail Art As A Career Option?</h4>
+<p>Nail art is the art of enhancing the nails by trimming, decorating, and polishing them. It is generally done post manicure and pedicure. The art of decorating nails and nail style is not a new concept in the beauty industry instead it is a revival from the 1500s. The Incas used to paint their nails with eagles for enhancing their overall look.</p>
+<a href="javascript:void();" class="readmore-btn">Read More</a>
+</div>
+</br>
+<div class="box">
+	<img src="time3.jpg" alt="">
+	<h4>Strong And Fearless – Chadwick </br>The Flawless Actor & A True Super Hero</h4>
+	<p>Adorning the latest fashion trends and carrying himself like a true king, the American actor Chadwick Aaron Boseman has always been the heartthrob and amongst the best-dressed men in all events. The fashion culture has awaited to see Chadwick wear the designer hi
+		fashion wear and walk the red carpet or the ramp with a smile and a proud look.</p>
+	<a href="javascript:void();" class="readmore-btn">Read More</a>
+	</div>
+	<div class="box">
+		<img src="time4.jpg" alt="">
+		<h4>The Relevance Of Public Relations & Communication In Fashion</h4>
+		<p>Over the last few years, the fashion world has grown immensely, the fashion industry is not minor anymore. It’s quite the opposite, it’s vast, today fashion culture is dictating the world.
+			Along with carving the behaviors and attitudes of the public.</p>
+		<a href="javascript:void();" class="readmore-btn">Read More</a>
+		</div>
+		<div class="box">
+			<img src="time5.jpg" alt="">
+			<h4>Why Choose A Career In Fashion Styling?</h4>
+			<p>Back in 90’s most people didn’t even seem to know that styling was a career option. Today this has taken a 360′ degree turn, every fashion enthusiast seems to want to be a stylist. In the 
+				fashion stylists have exploded into the fashion industry scene like never before.</p>
+			<a href="javascript:void();" class="readmore-btn">Read More</a>
+			</div></br>
+			<div class="box">
+				<img src="time6.jpg" alt="">
+				<h4>Will Designer Masks Be The New Essential In Indian Weddings?</h4>
+				<p>As the COVID-19 pandemic becomes a part of our everyday life, a face mask is topping the list of trends in Indian fashion. It’s no more just a mask, but a must-have fashion and protection accessory. It’s alarming 
+					that the face mask has managed to go from a fashion accessory to a big business</p>
+				<a href="javascript:void();" class="readmore-btn">Read More</a>
+				</div>
+				<div class="box">
+					<img src="time7.jpg" alt="">
+					<h4>Grooms-To-Be: Unearth All About The Wedding Wear Available In Delhi!</h4>
+					<p>As the Indian weddings get a little less complicated, the sole focus on the bridal outfit has begun to shift a little bit. Long gone are the days when men did not pay much attention to their wedding outfits.
+						Today, they also make efforts to look like a star at their weddings.</p>
+					<a href="javascript:void();" class="readmore-btn">Read More</a>
+					</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script>
+	$(".readmore-btn").on('click', function(){
+$(this).parent().toggleClass("showContent");
+
+//shorthand if-else statement
+var replaceText = $(this).parent().hasClass("showContent") ? 
+"Read Less" : "Read More";
+$(this).text(replaceText);
+	});
+</script>
+</body>
+</html>
+
+
+
